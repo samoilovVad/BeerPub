@@ -12,7 +12,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var labelThird: UILabel!
     @IBOutlet weak var labelSecond: UILabel!
     @IBOutlet weak var labelFirst: UILabel!
-    
     @IBOutlet weak var infoButton: UIButton!
     @IBOutlet weak var checkRemainder: UIButton!
     @IBOutlet weak var buyFirst: UIButton!
@@ -29,10 +28,22 @@ class ViewController: UIViewController {
         labelSecond.text = "\(Manager.instance.arrayOfBeers[1].name) \(Manager.instance.arrayOfBeers[1].country)"
         labelThird.text = "\(Manager.instance.arrayOfBeers[2].name) \(Manager.instance.arrayOfBeers[2].country)"
         labelFourth.text = "\(Manager.instance.arrayOfBeers[3].name) \(Manager.instance.arrayOfBeers[3].country)"
-        
+        // set buttons styles
+        checkRemainder.layer.cornerRadius = 20
+        buyFirst.layer.cornerRadius = 20
+        buySecond.layer.cornerRadius = 20
+        buyThird.layer.cornerRadius = 20
+        buyFourth.layer.cornerRadius = 20
+        revenueButton.layer.cornerRadius = 20
+        newShiftButton.layer.cornerRadius = 20
     }
 
     @IBAction func infoTapped(_ sender: Any) {
+        let alert = UIAlertController(title: "Info",
+                                      message: setTextInfo(),
+                                      preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Done", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     @IBAction func checkRemainderTapped(_ sender: Any) {
     }
@@ -58,8 +69,15 @@ class ViewController: UIViewController {
 // MARK: set style
 extension ViewController {
     
-    // labels
-
+    func setTextInfo() -> String? {
+        var text = ""
+        
+        for i in Manager.instance.arrayOfBeers {
+            text += "\(i.name) - \(i.remainderOfVolume) litres\n"
+        }
+        return text
+    }
+    
 }
 
 
