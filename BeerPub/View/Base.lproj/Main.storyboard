@@ -149,18 +149,6 @@
                                     <action selector="infoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I27-fF-iyg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LnH-uW-Jdx">
-                                <rect key="frame" x="161" y="44" width="233" height="34.5"/>
-                                <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                <color key="tintColor" systemColor="labelColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Check remainder of volume">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="checkRemainderTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WGj-jW-9qw"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="131" translatesAutoresizingMaskIntoConstraints="NO" id="tvI-LY-G2X">
                                 <rect key="frame" x="30" y="814" width="354" height="38"/>
                                 <subviews>
@@ -190,23 +178,29 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check remainder of volume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXP-Oy-gR6">
+                                <rect key="frame" x="75" y="49.5" width="209" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TXP-Oy-gR6" secondAttribute="trailing" symbolic="YES" id="29r-sp-945"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tvI-LY-G2X" secondAttribute="bottom" constant="10" id="462-Wb-LEt"/>
                             <constraint firstItem="Oms-rm-era" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6d1-Fb-I5H"/>
                             <constraint firstItem="Ugg-5R-bvE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9mm-9Q-ax3"/>
-                            <constraint firstItem="LnH-uW-Jdx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Af4-jm-f9D"/>
                             <constraint firstItem="tvI-LY-G2X" firstAttribute="top" secondItem="Oms-rm-era" secondAttribute="bottom" constant="40" id="KEn-JO-Yeb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LnH-uW-Jdx" secondAttribute="trailing" constant="20" id="KLo-lt-NjT"/>
+                            <constraint firstItem="TXP-Oy-gR6" firstAttribute="leading" secondItem="Ugg-5R-bvE" secondAttribute="trailing" constant="10" id="OR0-AK-Ahm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Oms-rm-era" secondAttribute="trailing" constant="30" id="RZ3-U5-ogQ"/>
                             <constraint firstItem="tvI-LY-G2X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="aaW-0W-2Vs"/>
+                            <constraint firstItem="TXP-Oy-gR6" firstAttribute="centerY" secondItem="Ugg-5R-bvE" secondAttribute="centerY" id="dRB-78-x2Z"/>
                             <constraint firstAttribute="trailing" secondItem="tvI-LY-G2X" secondAttribute="trailing" constant="30" id="eUz-Qm-mI9"/>
                             <constraint firstItem="Ugg-5R-bvE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pke-CB-CTu"/>
                             <constraint firstItem="Oms-rm-era" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="qLD-xI-bQ3"/>
                             <constraint firstItem="Oms-rm-era" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ubH-By-PcU"/>
-                            <constraint firstItem="LnH-uW-Jdx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ugg-5R-bvE" secondAttribute="trailing" constant="8" symbolic="YES" id="wfA-49-rQY"/>
                         </constraints>
                     </view>
                     <connections>
@@ -214,7 +208,6 @@
                         <outlet property="buyFourth" destination="K5Z-61-9Fx" id="umL-uC-ct5"/>
                         <outlet property="buySecond" destination="0Er-dh-aEU" id="1F1-5G-KyM"/>
                         <outlet property="buyThird" destination="sah-YF-esj" id="gX2-pE-SPc"/>
-                        <outlet property="checkRemainder" destination="LnH-uW-Jdx" id="rOe-e1-0wo"/>
                         <outlet property="infoButton" destination="Ugg-5R-bvE" id="kmq-je-PsJ"/>
                         <outlet property="labelFirst" destination="U0t-8L-KPl" id="4Ox-D0-olK"/>
                         <outlet property="labelFourth" destination="lmn-a6-FIa" id="hYh-zj-EAs"/>

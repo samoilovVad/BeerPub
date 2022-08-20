@@ -20,6 +20,12 @@ class Manager {
     ]
     
     func sellBeer(a: String) {
-        
+        switch a {
+        case "Buy\n\(arrayOfBeers[0].price)$": priceCounter += arrayOfBeers[0].price; arrayOfBeers[0].remainderOfVolume -= 0.5
+        case "Buy\n\(arrayOfBeers[1].price)$": priceCounter += arrayOfBeers[1].price; arrayOfBeers[1].remainderOfVolume -= 0.5
+        case "Buy\n\(arrayOfBeers[2].price)$": priceCounter += arrayOfBeers[2].price; arrayOfBeers[2].remainderOfVolume -= 0.5
+        case "Buy\n\(arrayOfBeers[3].price)$": priceCounter += arrayOfBeers[3].price; arrayOfBeers[3].remainderOfVolume -= 0.5
+        default : print("Error")
+        }
     }
 }
