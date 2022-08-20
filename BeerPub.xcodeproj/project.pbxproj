@@ -13,6 +13,8 @@
 		EC1CE70428B1146F0069DC17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC1CE70228B1146F0069DC17 /* Main.storyboard */; };
 		EC1CE70628B114710069DC17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC1CE70528B114710069DC17 /* Assets.xcassets */; };
 		EC1CE70928B114710069DC17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC1CE70728B114710069DC17 /* LaunchScreen.storyboard */; };
+		EC1CE71528B12A930069DC17 /* BeerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1CE71428B12A930069DC17 /* BeerClass.swift */; };
+		EC1CE71728B12B410069DC17 /* ManagerSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1CE71628B12B410069DC17 /* ManagerSingleton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		EC1CE70828B114710069DC17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC1CE70A28B114710069DC17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC1CE71028B115F40069DC17 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EC1CE71428B12A930069DC17 /* BeerClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerClass.swift; sourceTree = "<group>"; };
+		EC1CE71628B12B410069DC17 /* ManagerSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerSingleton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,15 +62,41 @@
 		EC1CE6FB28B1146F0069DC17 /* BeerPub */ = {
 			isa = PBXGroup;
 			children = (
+				EC1CE71128B12A210069DC17 /* Models */,
+				EC1CE71328B12A600069DC17 /* View */,
+				EC1CE71228B12A330069DC17 /* Controllers */,
 				EC1CE6FC28B1146F0069DC17 /* AppDelegate.swift */,
 				EC1CE6FE28B1146F0069DC17 /* SceneDelegate.swift */,
-				EC1CE70028B1146F0069DC17 /* ViewController.swift */,
-				EC1CE70228B1146F0069DC17 /* Main.storyboard */,
-				EC1CE70528B114710069DC17 /* Assets.xcassets */,
-				EC1CE70728B114710069DC17 /* LaunchScreen.storyboard */,
 				EC1CE70A28B114710069DC17 /* Info.plist */,
 			);
 			path = BeerPub;
+			sourceTree = "<group>";
+		};
+		EC1CE71128B12A210069DC17 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC1CE71428B12A930069DC17 /* BeerClass.swift */,
+				EC1CE71628B12B410069DC17 /* ManagerSingleton.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EC1CE71228B12A330069DC17 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC1CE70028B1146F0069DC17 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EC1CE71328B12A600069DC17 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC1CE70228B1146F0069DC17 /* Main.storyboard */,
+				EC1CE70528B114710069DC17 /* Assets.xcassets */,
+				EC1CE70728B114710069DC17 /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +172,9 @@
 			files = (
 				EC1CE70128B1146F0069DC17 /* ViewController.swift in Sources */,
 				EC1CE6FD28B1146F0069DC17 /* AppDelegate.swift in Sources */,
+				EC1CE71528B12A930069DC17 /* BeerClass.swift in Sources */,
 				EC1CE6FF28B1146F0069DC17 /* SceneDelegate.swift in Sources */,
+				EC1CE71728B12B410069DC17 /* ManagerSingleton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
