@@ -26,16 +26,26 @@ class ViewController: UIViewController {
         
         // labels
         labelFirst.text = "\(Manager.instance.arrayOfBeers[0].name) \(Manager.instance.arrayOfBeers[0].country)\n0.5l"
+        labelFirst.textColor = .black
         labelSecond.text = "\(Manager.instance.arrayOfBeers[1].name) \(Manager.instance.arrayOfBeers[1].country)\n0.5l"
+        labelSecond.textColor = .black
         labelThird.text = "\(Manager.instance.arrayOfBeers[2].name) \(Manager.instance.arrayOfBeers[2].country)\n0.5l"
+        labelThird.textColor = .black
         labelFourth.text = "\(Manager.instance.arrayOfBeers[3].name) \(Manager.instance.arrayOfBeers[3].country)\n0.5l"
+        labelFourth.textColor = .black
         // set buttons styles
         buyFirst.layer.cornerRadius = 20
+        buyFirst.tintColor = .black
         buySecond.layer.cornerRadius = 20
+        buySecond.tintColor = .black
         buyThird.layer.cornerRadius = 20
+        buyThird.tintColor = .black
         buyFourth.layer.cornerRadius = 20
+        buyFourth.tintColor = .black
         revenueButton.layer.cornerRadius = 20
+        revenueButton.tintColor = .black
         newShiftButton.layer.cornerRadius = 20
+        newShiftButton.tintColor = .black
         // button titles
         buyFirst.setTitle("Buy\n\(Manager.instance.arrayOfBeers[0].price)$", for: .normal)
         buySecond.setTitle("Buy\n\(Manager.instance.arrayOfBeers[1].price)$", for: .normal)
