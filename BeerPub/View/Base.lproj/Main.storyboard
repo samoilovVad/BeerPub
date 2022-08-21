@@ -18,6 +18,9 @@
                         <viewLayoutGuide key="safeArea" id="SKe-A4-xEq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toSecond" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="6Go-oe-Ngl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M4p-dF-pSh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -230,6 +233,7 @@
                             <constraint firstItem="Oms-rm-era" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ubH-By-PcU"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="L6w-WG-Bay"/>
                     <connections>
                         <outlet property="buyFirst" destination="7uH-Gl-0E9" id="Eqz-v6-8Wu"/>
                         <outlet property="buyFourth" destination="K5Z-61-9Fx" id="umL-uC-ct5"/>
