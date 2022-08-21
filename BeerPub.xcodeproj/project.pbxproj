@@ -15,6 +15,7 @@
 		EC1CE70928B114710069DC17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC1CE70728B114710069DC17 /* LaunchScreen.storyboard */; };
 		EC1CE71528B12A930069DC17 /* BeerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1CE71428B12A930069DC17 /* BeerClass.swift */; };
 		EC1CE71728B12B410069DC17 /* ManagerSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1CE71628B12B410069DC17 /* ManagerSingleton.swift */; };
+		ECFE1EC928B258C40051C0FE /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFE1EC828B258C40051C0FE /* LaunchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		EC1CE71028B115F40069DC17 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EC1CE71428B12A930069DC17 /* BeerClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerClass.swift; sourceTree = "<group>"; };
 		EC1CE71628B12B410069DC17 /* ManagerSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerSingleton.swift; sourceTree = "<group>"; };
+		ECFE1EC828B258C40051C0FE /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				EC1CE70028B1146F0069DC17 /* ViewController.swift */,
+				ECFE1EC828B258C40051C0FE /* LaunchViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC1CE70128B1146F0069DC17 /* ViewController.swift in Sources */,
+				ECFE1EC928B258C40051C0FE /* LaunchViewController.swift in Sources */,
 				EC1CE6FD28B1146F0069DC17 /* AppDelegate.swift in Sources */,
 				EC1CE71528B12A930069DC17 /* BeerClass.swift in Sources */,
 				EC1CE6FF28B1146F0069DC17 /* SceneDelegate.swift in Sources */,
