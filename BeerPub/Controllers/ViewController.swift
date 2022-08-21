@@ -8,6 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var labelCheckRem: UILabel!
     @IBOutlet weak var labelFourth: UILabel!
     @IBOutlet weak var labelThird: UILabel!
     @IBOutlet weak var labelSecond: UILabel!
@@ -25,6 +26,7 @@ class ViewController: UIViewController {
         self.view.backgroundColor = #colorLiteral(red: 0.9228420854, green: 0.854423821, blue: 0.7227374315, alpha: 1)
         
         // labels
+        labelCheckRem.textColor = .black
         labelFirst.text = "\(Manager.instance.arrayOfBeers[0].name) \(Manager.instance.arrayOfBeers[0].country)\n0.5l"
         labelFirst.textColor = .black
         labelSecond.text = "\(Manager.instance.arrayOfBeers[1].name) \(Manager.instance.arrayOfBeers[1].country)\n0.5l"

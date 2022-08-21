@@ -210,6 +210,7 @@
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check remainder of volume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXP-Oy-gR6">
                                 <rect key="frame" x="75" y="49.5" width="209" height="20.5"/>
+                                <color key="tintColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -240,6 +241,7 @@
                         <outlet property="buySecond" destination="0Er-dh-aEU" id="1F1-5G-KyM"/>
                         <outlet property="buyThird" destination="sah-YF-esj" id="gX2-pE-SPc"/>
                         <outlet property="infoButton" destination="Ugg-5R-bvE" id="kmq-je-PsJ"/>
+                        <outlet property="labelCheckRem" destination="TXP-Oy-gR6" id="zOj-Pe-nAf"/>
                         <outlet property="labelFirst" destination="U0t-8L-KPl" id="4Ox-D0-olK"/>
                         <outlet property="labelFourth" destination="lmn-a6-FIa" id="hYh-zj-EAs"/>
                         <outlet property="labelSecond" destination="0jA-Jj-RBE" id="ODi-F2-g6U"/>
