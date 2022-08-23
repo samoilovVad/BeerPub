@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var labelCheckRem: UILabel!
+    @IBOutlet weak var labelCheckRevenue: UILabel!
     @IBOutlet weak var labelFourth: UILabel!
     @IBOutlet weak var labelThird: UILabel!
     @IBOutlet weak var labelSecond: UILabel!
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         self.view.backgroundColor = #colorLiteral(red: 0.9228420854, green: 0.854423821, blue: 0.7227374315, alpha: 1)
         
         // labels
-        labelCheckRem.textColor = .black
+        labelCheckRevenue.textColor = .black
         labelFirst.text = "\(Manager.instance.arrayOfBeers[0].name) \(Manager.instance.arrayOfBeers[0].country)\n0.5l"
         labelFirst.textColor = .black
         labelSecond.text = "\(Manager.instance.arrayOfBeers[1].name) \(Manager.instance.arrayOfBeers[1].country)\n0.5l"
@@ -68,22 +68,22 @@ class ViewController: UIViewController {
     @IBAction func buyFirstTapped(_ sender: Any) {
         guard let title = (sender as! UIButton).titleLabel?.text else {return}
         Manager.instance.sellBeer(a: title)
-        labelCheckRem.text = "Revenue: \(String(format: "%.2f", Manager.instance.priceCounter))$"
+        labelCheckRevenue.text = "Revenue: \(String(format: "%.2f", Manager.instance.priceCounter))$"
     }
     @IBAction func buySecondTapped(_ sender: Any) {
         guard let title = (sender as! UIButton).titleLabel?.text else {return}
         Manager.instance.sellBeer(a: title)
-        labelCheckRem.text = "Revenue: \(String(format: "%.2f", Manager.instance.priceCounter))$"
+        labelCheckRevenue.text = "Revenue: \(String(format: "%.2f", Manager.instance.priceCounter))$"
     }
     @IBAction func buyThirdTapped(_ sender: Any) {
         guard let title = (sender as! UIButton).titleLabel?.text else {return}
         Manager.instance.sellBeer(a: title)
-        labelCheckRem.text = "Revenue: \(String(format: "%.2f", Manager.instance.priceCounter))$"
+        labelCheckRevenue.text = "Revenue: \(String(format: "%.2f", Manager.instance.priceCounter))$"
     }
     @IBAction func buyFourthTapped(_ sender: Any) {
         guard let title = (sender as! UIButton).titleLabel?.text else {return}
         Manager.instance.sellBeer(a: title)
-        labelCheckRem.text = "Revenue: \(String(format: "%.2f", Manager.instance.priceCounter))$"
+        labelCheckRevenue.text = "Revenue: \(String(format: "%.2f", Manager.instance.priceCounter))$"
     }
     
     // Action for revenue button
@@ -102,7 +102,7 @@ class ViewController: UIViewController {
                                       preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Done", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
-        labelCheckRem.text = "Revenue: \(String(format: "%.2f", Manager.instance.priceCounter))$"
+        labelCheckRevenue.text = "Revenue: \(String(format: "%.2f", Manager.instance.priceCounter))$"
         
     }
     
