@@ -68,18 +68,22 @@ class ViewController: UIViewController {
     @IBAction func buyFirstTapped(_ sender: Any) {
         guard let title = (sender as! UIButton).titleLabel?.text else {return}
         Manager.instance.sellBeer(a: title)
+        labelCheckRem.text = "Revenue: \(String(format: "%.2f", Manager.instance.priceCounter))$"
     }
     @IBAction func buySecondTapped(_ sender: Any) {
         guard let title = (sender as! UIButton).titleLabel?.text else {return}
         Manager.instance.sellBeer(a: title)
+        labelCheckRem.text = "Revenue: \(String(format: "%.2f", Manager.instance.priceCounter))$"
     }
     @IBAction func buyThirdTapped(_ sender: Any) {
         guard let title = (sender as! UIButton).titleLabel?.text else {return}
         Manager.instance.sellBeer(a: title)
+        labelCheckRem.text = "Revenue: \(String(format: "%.2f", Manager.instance.priceCounter))$"
     }
     @IBAction func buyFourthTapped(_ sender: Any) {
         guard let title = (sender as! UIButton).titleLabel?.text else {return}
         Manager.instance.sellBeer(a: title)
+        labelCheckRem.text = "Revenue: \(String(format: "%.2f", Manager.instance.priceCounter))$"
     }
     
     // Action for revenue button
@@ -98,6 +102,7 @@ class ViewController: UIViewController {
                                       preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Done", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
+        labelCheckRem.text = "Revenue: \(String(format: "%.2f", Manager.instance.priceCounter))$"
         
     }
     
