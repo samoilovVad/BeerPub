@@ -2,7 +2,7 @@
 
 ## App screenshots
 
-![appicon](https://github.com/samoilovVad/BeerPub/blob/master/BeerPub/View/Assets.xcassets/Screenshot1.imageset/Screenshot%202022-08-21%20at%2014.07.14.png)![image](https://github.com/samoilovVad/BeerPub/blob/master/BeerPub/View/Assets.xcassets/Screenshot2.imageset/Screenshot%202022-08-23%20at%2021.45.23.png)
+![appicon](https://github.com/samoilovVad/BeerPub/blob/master/BeerPub/View/Assets.xcassets/Screenshot1.imageset/Screenshot%202022-08-21%20at%2014.07.14.png)![image](https://github.com/samoilovVad/BeerPub/blob/master/BeerPub/View/Assets.xcassets/Screenshot2.imageset/Screenshot%202022-08-28%20at%2014.33.28.png)
 ***
 Homework BeerPub.  Beer class, properties: name, price, country, remaining volume.
 Implement the sale of beer through a singleton manager.  Examination
